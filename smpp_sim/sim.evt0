@@ -1,0 +1,30 @@
+05:36:28 IOException receive via TCPIPConnection
+05:36:28 Exception: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:320)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:347)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:800)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at opensmpp.core@3.0.0/org.smpp.TCPIPConnection.receive(TCPIPConnection.java:408)
+	at opensmpp.core@3.0.0/org.smpp.ReceiverBase.receivePDUFromConnection(ReceiverBase.java:197)
+	at opensmpp.core@3.0.0/org.smpp.Receiver.receiveAsync(Receiver.java:358)
+	at opensmpp.core@3.0.0/org.smpp.ReceiverBase.process(ReceiverBase.java:96)
+	at opensmpp.core@3.0.0/org.smpp.util.ProcessingThread.run(ProcessingThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+05:36:28 Receiver.receiveAsync()
+05:36:28 Exception: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:320)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:347)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:800)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at opensmpp.core@3.0.0/org.smpp.TCPIPConnection.receive(TCPIPConnection.java:408)
+	at opensmpp.core@3.0.0/org.smpp.ReceiverBase.receivePDUFromConnection(ReceiverBase.java:197)
+	at opensmpp.core@3.0.0/org.smpp.Receiver.receiveAsync(Receiver.java:358)
+	at opensmpp.core@3.0.0/org.smpp.ReceiverBase.process(ReceiverBase.java:96)
+	at opensmpp.core@3.0.0/org.smpp.util.ProcessingThread.run(ProcessingThread.java:191)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
